@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <title>会员注册-花礼网</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="../font_1965463_uvvn2wkoiji/iconfont.css">
+
+
+</head>
+
+<body>
+    <!--顶部导航-->
+    <div id="header">
+        <ul>
+            <li>
+                <span class="sp1"></span>
+                <span class="sp">&nbsp;收藏鲜花网(hua.com)</span>
+            </li>
+            <li>
+                <span class="sp2"></span>
+                <span class="sp">&nbsp;关注微信</span>
+            </li>
+            <li>
+                <span class="sp3"></span>
+                <span class="sp">&nbsp;花礼网</span>
+            </li>
+        </ul>
+        <ol>
+            <li>
+                <a href="../login/login.html">你好，请登录</a>&nbsp;
+                <a href="../register/register.html">注册</a>
+            </li>
+            <li><a href="#">订单查询</a></li>
+            <li><a href="#">我的花礼</a></li>
+            <li><a href="#">客户服务</a></li>
+            <li>
+                <span class="sp4"></span>
+                <a href="#">&nbsp;购物车</a></li>
+            <li><a href="#">中国鲜花礼品网-中国鲜花网领先品牌</a></li>
+        </ol>
+    </div>
+    <!-- 头部-->
+    <div id="sousuo">
+        <div class="sousuo-box float_left">
+            <img src="../login、register-img/pc_hualogo.png" alt="">
+            <span class="inp">
+                <input type="text" placeholder="  商品关键词"><button>搜索</button>
+            </span>
+            <ol>
+                <li>
+                    <span class="sp5"></span>
+                    <span class="sp">400-889-8188</span>
+                </li>
+                <li>
+                    <span class="sp6"></span>
+                    <span class="sp">在线客服</span>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- 背景图 -->
+    <div id="banner">
+        <img src="../login、register-img/login_bg.jpg" alt="">
+        <form class="res-box" action="./register.php" method="post">
+            <div>
+                <h3>手机号注册</h3>
+            </div>
+            <input class="ipt iconfont" type="text" name="uname" placeholder=" &#xe62b; 请输入手机"><span></span>
+            <input class="ipt_ iconfont" type="text" name="uyzm" placeholder=" &#xeaca; 请输入短信验证码"><button class="yzm">获取验证码</button><span></span>
+            <input class="pwd ipt iconfont" type="password" name="upwd" placeholder=" &#xe62c; 请输入密码"><span></span>
+            <input type="submit" class="res" value="注册">
+            <div class="btm-box">
+                <span class="sp7"></span>
+                <span class="sp sp-Q">QQ</span>
+                <span class="sp8"></span>
+                <span class="sp">支付宝</span>
+                <span class="login"><a href="../login/login.html">登录账号&gt;</a></span>
+            </div>
+        </form>
+
+
+
+    </div>
+    <!-- 底部导航 -->
+    <div id="btm-nav">
+        <ol>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">媒体报道</a></li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">企业团购</a></li>
+            <li><a href="#">花店入驻</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">在线补款</a></li>
+            <li><a href="#">为什么选择中国鲜花礼品网</a></li>
+        </ol>
+    </div>
+    <!--底部商标 -->
+    <div id="shangbiao">
+        <img src="../login、register-img/slogan.png" alt="">
+        <img src="../login、register-img/100.jpg" alt="">
+        <img src="../login、register-img/bico1.jpg" alt="">
+        <img src="../login、register-img/govIcon.gif" alt="">
+    </div>
+    <!-- 底部文字 -->
+    <div id="copyright">
+        <p>中国花卉协会会员中国电子商务协会会员ICP经营许可证﹔粤B2-20050744|粤ICP备09171662号粤公网安备44030502000373号Copyright ◎ 2005-2020</p>
+        <p>www.hua.com深圳市百易信息技术有限公司</p>
+    </div>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="./register.js"></script>
+    <script>
+        var form=document.querySelector("form");
+        form.onsubmit = function(e){
+            var e = e || window.event
+            try{
+                e.preventDefault();
+            }catch(e){
+                e.returnValue = false;
+            }
+            //console.log(123)
+        }
+    </script>
+</body>
+
+
+</html>
